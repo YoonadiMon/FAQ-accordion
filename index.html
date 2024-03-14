@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | FAQ accordion</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+
+</head>
+<body>
+  <main>
+    <article id="card">
+      <div id="row1">
+        <img src="assets/images/icon-star.svg" alt="icon-star">
+        <h1>FAQs</h1>
+      </div>
+
+      <section id="questions">
+        <div class="ques">
+          <div id="row2" class="oneline">
+            <h2>
+              What is Frontend Mentor, and how will it help me?
+            </h2>
+            <button class="icons" id="icon2-js" onclick="changeIcon('1');"><img src="assets/images/icon-plus.svg" alt="icon-plus"></button>
+          </div>
+        </div>
+        <div id="ans1" class="answer-css"></div>
+        <hr>
+
+        <div class="ques">
+          <div id="row3" class="oneline">
+            <h2>
+              Is Frontend Mentor free?
+            </h2>
+            <button class="icons" id="icon3-js" onclick="changeIcon('2');"><img src="assets/images/icon-plus.svg" alt="icon-plus"></button>
+          </div>
+        </div>
+        <div id="ans2" class="answer-css"></div>
+        <hr>
+  
+        <div class="ques">
+          <div id="row4" class="oneline">
+            <h2>
+              Can I use Frontend Mentor projects in my portfolio?
+            </h2>
+            <button class="icons" id="icon4-js" onclick="changeIcon('3');"><img src="assets/images/icon-plus.svg" alt="icon-plus"></button>
+          </div>
+        </div>
+        <div id="ans3" class="answer-css"></div>
+        <hr>
+  
+        <div class="ques">
+          <div id="row5" class="oneline">
+            <h2>
+              How can I get help if I'm stuck on a Frontend Mentor challenge?
+            </h2>
+            <button class="icons" id="icon5-js"  onclick="changeIcon('4');"><img src="assets/images/icon-plus.svg" alt="icon-plus"></button>
+          </div>
+        </div>
+        <div id="ans4" class="answer-css"></div>
+
+      </article>
+      </section>
+      
+  </main>
+  
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Yoonadi Mon</a>.
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
