@@ -5,9 +5,8 @@
 body {
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
-  background: url(assets/images/background-pattern-desktop.svg);
-  background-color: hsl(275, 100%, 97%);
-  background-repeat: no-repeat;
+  background: hsl(275, 100%, 97%) url(assets/images/background-pattern-desktop.svg) no-repeat;
+
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -18,6 +17,7 @@ body {
 }
 
 /* housestyle fonts spacing */
+/* fonts weight, size and colors */
 h1, h2 {
   color: hsl(292, 42%, 14%);
 }
@@ -28,6 +28,12 @@ h1 {
 h2 {
   font-weight: 600;
 }
+.answer-css {
+  font-weight: 400;
+  color: hsl(292, 16%, 49%);
+}
+
+/* margin */
 hr {
   color: hsl(275, 100%, 97%);
   margin-bottom: 2rem;
@@ -44,10 +50,7 @@ hr {
   background: transparent;
   cursor: pointer;
 }
-.answer-css {
-  font-weight: 400;
-  color: hsl(292, 16%, 49%);
-}
+
 
 /* card */
 main {
@@ -78,3 +81,43 @@ main {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 1400px) {
+  body {
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  main {
+    justify-self: center;
+    height: auto;
+  }
+
+  /* font size */
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .answer-css {
+    font-size: 0.8rem;
+  }
+  .icons img {
+    width: 80%;
+  }
+  
+
+  /* margin */
+  hr, #card div {
+    margin-bottom: 1rem;
+  }
+
+  /* card */
+  #card {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+
+}
