@@ -1,5 +1,4 @@
 function changeIcon(id) {
-  console.log(`#icon${Number(id)+1}-js`);
   let buttonIcon = document.querySelector(`#icon${Number(id)+1}-js`);
   // buttonIcon.innerHTML = `<img src="assets/images/icon-minus.svg" alt="icon-minus">`
 

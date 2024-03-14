@@ -6,7 +6,6 @@ body {
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
   background: hsl(275, 100%, 97%) url(assets/images/background-pattern-desktop.svg) no-repeat;
-
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -27,6 +26,10 @@ h1 {
 }
 h2 {
   font-weight: 600;
+  cursor: pointer;
+}
+h2:hover {
+  color: #9d55c4;
 }
 .answer-css {
   font-weight: 400;
@@ -54,11 +57,10 @@ hr {
 
 /* card */
 main {
-  width: 50%;
+  width: 60%;
 }
 #card {
   background: hsl(0, 0%, 100%);
-  width: 100%;
   margin-bottom: 40px;
   padding: 40px;
   border-radius: 10px;
@@ -85,12 +87,13 @@ main {
 @media (max-width: 1400px) {
   body {
     overflow: auto;
-    display: grid;
-    grid-template-columns: 100%;
+    /* display: grid;
+    grid-template-columns: 100%; */
   }
   main {
     justify-self: center;
     height: auto;
+    width: 50%;
   }
 
   /* font size */
@@ -117,7 +120,28 @@ main {
   #card {
     width: 100%;
     padding: 20px;
-    margin-bottom: 0;
   }
 
+}
+
+@media (max-width: 500px) {
+  body {
+    background: hsl(275, 100%, 97%) url(assets/images/background-pattern-mobile.svg) no-repeat;
+    background-size: contain;
+  }
+  main {
+    width: 80%;
+  }
+  #card {
+    width: auto;
+  }
+  .oneline  {
+    display: grid;
+    grid-template-columns: 80% 10%;
+  }
+
+  /* font size */
+  #card #row1 img {
+    width: 1.4rem;
+  }
 }
